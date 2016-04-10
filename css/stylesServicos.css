@@ -1,0 +1,89 @@
+/* Formatação Servços */
+section#corpo span {
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0,0,0,.4);
+    font-size: 15pt;
+    padding: 5px;
+    line-height: 408px;
+}
+
+section#corpo li:hover span {
+    opacity: 1;
+}
+
+section#corpo ul { 
+    list-style: none;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+section#corpo li {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    margin: 5px 12px 15px 12px; 
+    border: 5px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    transition: all .3s ease-in;
+}
+
+section#corpo li:hover {
+    transform: scale(1.2);
+}
+
+section#corpo li#aerobica {
+    background: url('../img/aerobica.jpg') no-repeat;
+    background-position: 50% 50%; /* Mostra o meio da imagem */
+    background-size: 750px 500px;
+}
+section#corpo li#aerobica:hover {
+    background-size: 220px 220px;
+}
+
+section#corpo li#alongamento {
+    background: url('../img/alongamento.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 750px 500px;
+}
+section#corpo li#alongamento:hover {
+    background-size: 220px 220px;
+}
+
+section#corpo li#musculacao {
+    background: url('../img/musculacao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 750px 500px;
+}
+section#corpo li#musculacao:hover {
+    background-size: 220px 220px;
+}
+
+section#corpo li#pilates {
+    background: url('../img/pilates.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 750px 500px;
+}
+section#corpo li#pilates:hover {
+    background-size: 220px 220px;
+}
+
+section#corpo li#spinning {
+    background: url('../img/spinning.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 750px 500px;
+}
+section#corpo li#spinning:hover {
+    background-size: 220px 220px;
+}
+
+section#corpo li#zumba {
+    background: url('../img/zumba.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 750px 500px;
+}
+section#corpo li#zumba:hover {
+    background-size: 220px 220px;
+}
