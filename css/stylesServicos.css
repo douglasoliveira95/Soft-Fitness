@@ -6,7 +6,7 @@ header#cabecalhoServicos {
 }
 
 /* Formatação Serviços */
-section#corpo span {
+section#corpoServicos span {
     opacity: 0;
     color: white;
     text-shadow: 1px 1px 1px black;
@@ -16,17 +16,17 @@ section#corpo span {
     line-height: 408px;
 }
 
-section#corpo li:hover span {
+section#corpoServicos li:hover span {
     opacity: 1;
 }
 
-section#corpo ul { 
+section#corpoServicos ul { 
     list-style: none;
     margin-left: 250px;
     margin-right: 250px;
 }
 
-section#corpo li {
+section#corpoServicos li {
     display: inline-block;
     width: 220px;
     height: 220px;
@@ -36,60 +36,60 @@ section#corpo li {
     transition: all .5s ease-out;
 }
 
-section#corpo li:hover {
+section#corpoServicos li:hover {
     transform: scale(1.2);
 }
 
-section#corpo li#aerobica {
+section#corpoServicos li#aerobica {
     background: url('../imgServicos/aerobica.jpg') no-repeat;
     background-position: 50% 50%; /* Mostra o meio da imagem */
     background-size: 750px 500px; /* Tamanho da imagem */
 }
-section#corpo li#aerobica:hover {
+section#corpoServicos li#aerobica:hover {
     background-size: 220px 220px;
 }
 
-section#corpo li#alongamento {
+section#corpoServicos li#alongamento {
     background: url('../imgServicos/alongamento.jpg') no-repeat;
     background-position: 50% 50%;
     background-size: 750px 500px;
 }
-section#corpo li#alongamento:hover {
+section#corpoServicos li#alongamento:hover {
     background-size: 220px 220px;
 }
 
-section#corpo li#musculacao {
+section#corpoServicos li#musculacao {
     background: url('../imgServicos/musculacao.jpg') no-repeat;
     background-position: 50% 50%;
     background-size: 750px 500px;
 }
-section#corpo li#musculacao:hover {
+section#corpoServicos li#musculacao:hover {
     background-size: 220px 220px;
 }
 
-section#corpo li#pilates {
+section#corpoServicos li#pilates {
     background: url('../imgServicos/pilates.jpg') no-repeat;
     background-position: 50% 50%;
     background-size: 750px 500px;
 }
-section#corpo li#pilates:hover {
+section#corpoServicos li#pilates:hover {
     background-size: 220px 220px;
 }
 
-section#corpo li#spinning {
+section#corpoServicos li#spinning {
     background: url('../imgServicos/spinning.jpg') no-repeat;
     background-position: 50% 50%;
     background-size: 750px 500px;
 }
-section#corpo li#spinning:hover {
+section#corpoServicos li#spinning:hover {
     background-size: 220px 220px;
 }
 
-section#corpo li#zumba {
+section#corpoServicos li#zumba {
     background: url('../imgServicos/zumba.jpg') no-repeat;
     background-position: 50% 50%;
     background-size: 750px 500px;
 }
-section#corpo li#zumba:hover {
+section#corpoServicos li#zumba:hover {
     background-size: 220px 220px;
 }

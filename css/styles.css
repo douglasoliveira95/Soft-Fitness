@@ -8,7 +8,7 @@ body {
 }
 
 /* Formatação */
-div#interface {
+div.interface {
     width: 1350px; 
     background-color: #dddddd;
     margin-left: -10px;
@@ -41,19 +41,19 @@ header#cabecalho hgroup#textoCabecalho h2 {
 }
 
 /* Formatação do Menu */
-div#divMenu {
+div.divMenu {
     margin-top: -15px;
 }
 
-nav#menu {
+nav.menu {
     display: block;
 }
 
-nav#menu h1 {
+nav.menu h1 {
     display: none;
 }
 
-nav#menu ul {
+nav.menu ul {
     background-color: rgba(0,0,0,.7);
     margin-top: 0px;
     width: 1310px;
@@ -62,28 +62,28 @@ nav#menu ul {
     text-transform: uppercase;
 }
 
-nav#menu li {
+nav.menu li {
     display: inline-block;
     background-color: transparent;
     padding: 15px 20px 6px 50px;
 }
 
-nav#menu li#login {
+nav.menu li.login {
     margin-left: 310px;
 }
 
-nav#menu a {
+nav.menu a {
     font-family: 'Bubblegum Sans', cursive;
     text-decoration: none;
     font-size: 20pt;
     color: white;
 }
 
-nav#menu a:hover {
+nav.menu a:hover {
     text-decoration: underline;
 } 
 
-nav#menu a:active {
+nav.menu a:active {
     color: #ebebeb;
 }
 
@@ -117,13 +117,13 @@ article p {
 }
 
 /* Formatação do Rodapé */
-footer#rodape {
+footer.rodape {
     clear: both;
     color: white;
     background-color: #121212;
 }
 
-footer#rodape p {
+footer.rodape p {
     text-align: center;
     padding: 15px;
 }

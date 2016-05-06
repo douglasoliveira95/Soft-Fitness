@@ -1,0 +1,6 @@
+/* Formatação do Cabeçalho Horários */
+header#cabecalhoHorarios {
+    height: 660px;
+    background: url("../img/Horarios.jpg") no-repeat;
+    background-size: 1350px 660px;
+}
