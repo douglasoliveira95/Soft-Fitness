@@ -1,0 +1,93 @@
+div#formLogin {
+    display: none;
+    position: fixed;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    margin-left: 1050px;
+    margin-top: 5px;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0,0,0,.9);
+}
+
+div#formLogin:target {
+    display: block;
+}
+
+div#formLogin button.close {
+    border: none;
+    font-family: monospace;
+    float: right;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin: 10px 10px;
+}
+
+div#formLogin p {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 25pt;
+    position: absolute;
+}
+
+div#formLogin input {
+    padding: 5px;
+    margin: 20px 0px -10px 20px;
+    font-size: 12pt;
+}
+
+div#formLogin label {
+    color: #d4d4d4;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-size: 10pt;
+}
+
+div.botoes ul {
+    list-style: none;
+}
+
+div.botoes li {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+div.botoes a {
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+    color: white;
+}
+
+div.botoes a.green {
+    background-color: #02a202;
+    padding: 10px 20px;
+    margin-left: -15px;
+}
+
+div.botoes a.green:hover {
+    background-color: #027102;
+}
+
+div.botoes a.green:active {
+    background-color: #07cb07;
+}
+
+div.botoes a.blue {
+    background-color: #0505be;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+div.botoes a.blue:hover {
+    background-color: #03037c;
+}
+
+div.botoes a.blue:active {
+    background-color: #0f06fa;
+}

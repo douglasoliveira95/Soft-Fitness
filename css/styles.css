@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans);
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
-@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans); /* h2, a */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web); /* h2 */
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script); /* h1 */
 
 body {
     background-color: white;
@@ -49,11 +49,11 @@ nav.menu {
     display: block;
 }
 
-nav.menu h1 {
+nav.menu h1.menuPrincipal {
     display: none;
 }
 
-nav.menu ul {
+nav.menu ul.login_ul {
     background-color: rgba(0,0,0,.7);
     margin-top: 0px;
     width: 1310px;
@@ -62,14 +62,14 @@ nav.menu ul {
     text-transform: uppercase;
 }
 
-nav.menu li {
+nav.menu li.login_li {
     display: inline-block;
     background-color: transparent;
     padding: 15px 20px 6px 50px;
 }
 
 nav.menu li.login {
-    margin-left: 310px;
+    margin-left: 320px;
 }
 
 nav.menu a {

@@ -5,18 +5,35 @@
     <title>Soft Fitness</title>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="css/stylespopupLogin.css">
 </head>
 <body>
     <div class="interface">
         <div class="divMenu">
             <nav class="menu">
-                <h1>Menu Principal</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="horarios.html">Horários</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="fale-conosco.html">Fale conosco</a></li>
-                    <li class="login"><a href="#">Login</a></li>
+                <h1 class="menuPrincipal">Menu Principal</h1>
+                <ul class="login_ul">
+                    <li class="login_li"><a href="index.html">Home</a></li>
+                    <li class="login_li"><a href="horarios.html">Horários</a></li>
+                    <li class="login_li"><a href="servicos.html">Serviços</a></li>
+                    <li class="login_li"><a href="fale-conosco.html">Fale conosco</a></li>
+                    <li class="login_li login"><a href="#formLogin">Login</a></li>
+                    
+                    <div id="formLogin">
+                        <p>WELCOME</p>
+                        <a href=""><button class="close" onclick="document.getElementById('formLogin').style.display='none';"> X </button></a>
+                        <form method="post">
+                            <input type="text" name="user" placeholder="Username">
+                            <input type="password" name="password" placeholder="Password">
+                            <label><input type="checkbox" name="rememberMe"> Remember me user</label>
+                            <div class="botoes">
+                                <ul>
+                                    <li><a class="green" href="#">Sign In</a></li>
+                                    <li><a class="blue" href="#">Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
                 </ul>
             </nav>
         </div>
