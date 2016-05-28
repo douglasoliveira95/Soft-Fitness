@@ -1,6 +1,39 @@
 /* Formatação do Cabeçalho Horários */
 header#cabecalhoHorarios {
     height: 660px;
-    background: url("../img/Horarios.jpg") no-repeat;
+    background: url("../img/horarioIMG.jpg") no-repeat;
     background-size: 1350px 660px;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table#horarios th {
+    padding: 15px 25px;
+    background-color: darkgray;
+}
+
+table#horarios th#horario {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: orange;
+}
+
+table#horarios td {
+    padding: 10px 20px;
+    background-color: #d8d4d4;
+}
+
+table#horarios td#servicosHoras {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background-color: #ffba3d;
+}
+
+#fech {
+    text-align: center;
 }
