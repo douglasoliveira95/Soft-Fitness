@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <title>Cadastrar</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="stylesheet" href="../cssBootStrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../cssBootStrap/styles.css">
+</head>
+<body>
+     
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="adm-index.html">Soft Fitness</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="cadastrar.html">Cadastrar</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="pagamentos.html">Relatórios</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#senha-modal">Alterar Senha</a></li>
+                    <li><a href="../index.html">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="container-fluid top">
+        <h1 class="text-center">Cadastrar Novos Clientes</h1>
+        <form id="formCliente">
+            <div class="row">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <div class="form-group col-md-4">
+                        <label for="txtNome">Nome:</label>
+                        <input type="text" id="txtNome" class="form-control" required>
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="txtCpf">CPF:</label>
+                        <input type="text" id="txtCpf"  class="form-control" required>
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="txtRg">RG:</label>
+                        <input type="text" id="txtRg"  class="form-control" required>
+                    </div>
+
+                    <div class="form-group col-md-2">    
+                        <label for="txtNascimento">Nascimento:</label>
+                        <input type="text" id="txtNascimento" class="form-control" required> 
+                    </div>    
+
+                    <div class="form-group col-md-2">   
+                        <label for="sexo">Sexo:</label>
+                        <select name="sexo" id="txtSexo" class="form-control"> 
+                            <option value="Masculino">Masculino</option> 
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+                    
+            <div class="row">
+                <fieldset>
+                    <legend>Contatos</legend>
+
+                    <div class="form-group col-md-4">
+                        <label for="txtEmail">Email:</label>
+                        <input type="email" id="txtEmail" class="form-control">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="txtTelefone">Telefone:</label>
+                        <input type="text" id="txtTelefone" class="form-control">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="txtCelular">Celular:</label>
+                        <input type="text" id="txtCelular" class="form-control" required>
+                    </div>                   
+                </fieldset>
+            </div>
+                   
+            <div class="row">
+                <fieldset>
+                    <legend>Endereço</legend>
+                
+                    <div class="form-group col-md-4">
+                        <label for="txtCidade">Cidade:</label>
+                        <input type="text" id="txtCidade" class="form-control" required>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="txtEstado">Estado:</label>
+                        <select name="estado" id="txtEstado" class="form-control"> 
+                            <option value="AC">Acre</option> 
+                            <option value="AL">Alagoas</option> 
+                            <option value="AM">Amazonas</option> 
+                            <option value="AP">Amapá</option> 
+                            <option value="BA">Bahia</option> 
+                            <option value="CE">Ceará</option> 
+                            <option value="DF">Distrito Federal</option> 
+                            <option value="ES">Espírito Santo</option> 
+                            <option value="GO">Goiás</option> 
+                            <option value="MA">Maranhão</option> 
+                            <option value="MT">Mato Grosso</option> 
+                            <option value="MS">Mato Grosso do Sul</option> 
+                            <option value="MG">Minas Gerais</option> 
+                            <option value="PA">Pará</option> 
+                            <option value="PB">Paraíba</option> 
+                            <option value="PR">Paraná</option> 
+                            <option value="PE">Pernambuco</option> 
+                            <option value="PI">Piauí</option> 
+                            <option value="RJ">Rio de Janeiro</option> 
+                            <option value="RN">Rio Grande do Norte</option> 
+                            <option value="RO">Rondônia</option> 
+                            <option value="RS">Rio Grande do Sul</option> 
+                            <option value="RR">Roraima</option> 
+                            <option value="SC">Santa Catarina</option> 
+                            <option value="SE">Sergipe</option> 
+                            <option value="SP">São Paulo</option> 
+                            <option value="TO">Tocantins</option> 
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="txtCep">Cep:</label>
+                        <input type="text" id="txtCep" class="form-control" required>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="txtRua">Rua:</label>
+                        <input type="text" id="txtRua" class="form-control" required>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="txtBairro">Bairro:</label>
+                        <input type="text" id="txtBairro" class="form-control" required>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="txtNumero">Número:</label>
+                        <input type="text" id="txtNumero" class="form-control" required>
+                    </div>
+                </fieldset>
+            </div>
+                    
+            <div class="row">
+	            <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-lg" value="Salvar">
+                    <input type="reset" class="btn btn-warning btn-lg" value="Limpar">
+                    <a href="adm-index.html" class="btn btn-default btn-lg">Cancelar</a>
+                </div>
+            </div>                   
+        </form>
+    </div>  
+     
+    <div class="modal fade" id="senha-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modalLabel">Alterar Senha</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="formSenha">
+                        <div class="form-group">
+                            <label>Senha Antiga</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Nova Senha</label>
+                            <input type="password" class="form-control" id="novaSenha" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmar Senha</label>
+                            <input type="password" class="form-control" id="confirmarSenha" required>                          
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Confirmar</button>
+	                        <a href="" class="btn btn-default" data-dismiss="modal">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/crud.js"></script>
+       
+</body>
+</html>

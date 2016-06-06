@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <title>Visualizar</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="stylesheet" href="../cssBootStrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../cssBootStrap/styles.css">
+</head>
+<body>
+     
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="adm-index.html">Soft Fitness</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="cadastrar.html">Cadastrar</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="pagamentos.html">Relatórios</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#senha-modal">Alterar Senha</a></li>
+                    <li><a href="../index.html">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="main" class="container-fluid top">
+        <h1 class="text-center">Visualizar Cliente</h1>
+  
+        <div class="row">
+            <div class="col-md-4">
+                <p><strong>Nome</strong></p>
+                <p>Gustavo Henrique Martins</p>
+            </div>
+            
+            <div class="col-md-4">
+                <p><strong>CPF</strong></p>
+                <p>096.112.046-04</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>RG</strong></p>
+                <p>MG 17.035.784</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Nascimento</strong></p>
+                <p>26/02/1995</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Sexo</strong></p>
+                <p>Masculino</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Email</strong></p>
+                <p>Gustavo_sh8@hotmail.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Telefone</strong></p>
+                <p></p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Celular</strong></p>
+                <p>035 9 9964-1994</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Cidade</strong></p>
+                <p>Natércia</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Estado</strong></p>
+                <p>Minas Gerais</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>CEP</strong></p>
+                <p>37524-000</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Rua</strong></p>
+                <p>Rua Cristiano Caetano</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Bairro</strong></p>
+                <p>Centro</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Número</strong></p>
+                <p>251</p>
+            </div>
+        </div>
+
+        <hr>
+       
+        <div id="actions" class="row">
+            <div class="col-md-12">
+                <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                <a href="editar.html" class="btn btn-warning">Editar</a>
+                <a href="clientes.html" class="btn btn-primary">Fechar</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modalLabel">Excluir Cliente</h4>
+                </div>
+                <div class="modal-body">
+                    Deseja realmente excluir este cliente?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Sim</button>
+	                <button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="senha-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modalLabel">Alterar Senha</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="formSenha">
+                        <div class="form-group">
+                            <label>Senha Antiga</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Nova Senha</label>
+                            <input type="password" class="form-control" id="novaSenha" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmar Senha</label>
+                            <input type="password" class="form-control" id="confirmarSenha" required>                          
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Confirmar</button>
+	                        <a href="" class="btn btn-default" data-dismiss="modal">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/crud.js"></script>
+       
+</body>
+</html>

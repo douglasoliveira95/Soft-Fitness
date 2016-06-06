@@ -22,8 +22,7 @@ section#corpoServicos li:hover span {
 
 section#corpoServicos ul { 
     list-style: none;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: -10px;
 }
 
 section#corpoServicos li {
@@ -58,6 +57,33 @@ section#corpoServicos li#alongamento:hover {
     background-size: 220px 220px;
 }
 
+section#corpoServicos li#jiu-jitsu {
+    background: url('../imgServicos/jiu-jitsu.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 750px 500px;
+}
+section#corpoServicos li#jiu-jitsu:hover {
+    background-size: 220px 220px;
+}
+
+section#corpoServicos li#mma {
+    background: url('../imgServicos/mma.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 750px 500px;
+}
+section#corpoServicos li#mma:hover {
+    background-size: 220px 220px;
+}
+
+section#corpoServicos li#muay-thai {
+    background: url('../imgServicos/muay-thai.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 750px 500px;
+}
+section#corpoServicos li#muay-thai:hover {
+    background-size: 220px 220px;
+}
+
 section#corpoServicos li#musculacao {
     background: url('../imgServicos/musculacao.jpg') no-repeat;
     background-position: 50% 50%;
@@ -73,6 +99,15 @@ section#corpoServicos li#pilates {
     background-size: 750px 500px;
 }
 section#corpoServicos li#pilates:hover {
+    background-size: 220px 220px;
+}
+
+section#corpoServicos li#power-jump {
+    background: url('../imgServicos/power-jump.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 750px 500px;
+}
+section#corpoServicos li#power-jump:hover {
     background-size: 220px 220px;
 }
 
