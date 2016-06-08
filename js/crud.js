@@ -111,6 +111,9 @@ $(function () {
             selectedIndex = parseInt($(this).attr("alt"));
             var cli = JSON.parse(tableClientes[selectedIndex]);
             
+//            $("#txtNome").val(cli.Nome);
+//            $("#txtCpf").val(cli.Cpf);
+            
             document.getElementById("txtNome").value = cli.Nome;
             document.getElementById("txtCpf").value = cli.Cpf;
             document.getElementById("txtRg").value = cli.Rg;
