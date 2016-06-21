@@ -53,26 +53,25 @@ div#formLogin label, input[type='checkbox'] {
 }
 
 div.botoes {
-    margin: 30px 60px;
+    margin: 0px 40px;
 }
 
-div.botoes a {
+div.botoes input[type='button'] {
     border: none;
-    text-decoration: none;
+    width: 120px;
+    height: 35px;
     border-radius: 3px;
-    font-size: 14px;
     color: white;
-    padding: 10px;
 }
 
-div.botoes a.green {
+div.botoes input[type='button'].green {
     background-color: #02a202;
 }
 
-div.botoes a.green:hover {
+div.botoes input[type='button'].green:hover {
     background-color: #027102;
 }
 
-div.botoes a.green:active {
+div.botoes input[type='button'].green:active {
     background-color: #07cb07;
 }

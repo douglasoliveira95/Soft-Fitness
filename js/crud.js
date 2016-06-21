@@ -83,15 +83,16 @@ $(function () {
         
         for (var i in tableClientes) {
             var cli = JSON.parse(tableClientes[i]);
-            $("#tbCliente tbody").append("<tr>");
-                $("#tbCliente tbody").append("<td>" + cli.Nome + "</td>");
-                $("#tbCliente tbody").append("<td>" + cli.Cpf + "</td>");
-                $("#tbCliente tbody").append("<td>" + cli.Email + "</td>");
-                $("#tbCliente tbody").append("<td>" + cli.Celular + "</td>");
-                $("#tbCliente tbody").append("<td>" + cli.Cidade + "</td>");
-                $("#tbCliente tbody").append("<td> <a class='btn btn-success btn-xs' href='visualizar.html'>Visualizar</a> <a class='btn btn-warning btn-xs botaoEditar' href='#'>Editar</a> <a class='btn btn-danger btn-xs botaoDeletar' href='#' data-toggle='modal' data-target='#delete-modal'>Excluir</a>" + "</td>");
-            $("#tbCliente tbody").append("</tr>");
+            $("#tbCliente tbody").append("<tr>" +
+                "<td>" + cli.Nome + "</td>" +
+                "<td>" + cli.Cpf + "</td>" +
+                "<td>" + cli.Email + "</td>" +
+                "<td>" + cli.Celular + "</td>" +
+                "<td>" + cli.Cidade + "</td>" +
+                "<td> <a class='btn btn-success btn-xs' href='visualizar.html'>Visualizar</a> <a class='btn btn-warning btn-xs botaoEditar' href='#'>Editar</a> <a class='btn btn-danger btn-xs botaoDeletar' href='#' data-toggle='modal' data-target='#delete-modal'>Excluir</a>" + "</td>" +
+            "</tr>");
         }
+        
     }
         
         $("#formCliente").on("submit", function() {
@@ -107,12 +108,9 @@ $(function () {
         
         $("#tbCliente").on("click", ".botaoEditar", function() {
             operacao = "E"; // E de Editar
-            
-            selectedIndex = parseInt($(this).attr("alt"));
-            var cli = JSON.parse(tableClientes[selectedIndex]);
-            
-//            $("#txtNome").val(cli.Nome);
-//            $("#txtCpf").val(cli.Cpf);
+
+            selectedIndex = parseInt($(this).attr("alt").replace("Editar", ""));
+            var cli = JSON.parse(tableClientes[0]);
             
             document.getElementById("txtNome").value = cli.Nome;
             document.getElementById("txtCpf").value = cli.Cpf;

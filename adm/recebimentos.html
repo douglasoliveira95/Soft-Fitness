@@ -2,7 +2,7 @@
 
 <html lang="pt-br">
 <head>
-    <title>Frequência</title>
+    <title>Pagamentos</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -21,87 +21,60 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="personal-index.html">Soft Fitness</a>
+                <a class="navbar-brand" href="adm-index.html">Soft Fitness</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="alunos.html">Alunos</a></li>
-                    <li><a href="recebimento.html">Recebimentos</a></li>
+                    <li><a href="cadastrar.html">Cadastrar</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="pagamentos.html">Pagamentos</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#senha-modal">Alterar Senha</a></li>
                     <li><a href="../index.html">Sair</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-      
+    
     <div class="container-fluid top">
-        <div class="row">
-            <div class="col-sm-3">
-                <h1 class="text-left">Alunos</h1>
+        <h1 class="text-center">Receber Pagamentos</h1>
+        <form id="formCliente">
+            <div class="row">
+                <fieldset>
+                    <legend>Dados</legend>
+                    <div class="col-md-4">
+                        <p><strong>Nome</strong></p>
+                        <p>Gustavo Henrique Martins</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>Vencimento</strong></p>
+                        <p>10/06/2016</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>Valor</strong></p>
+                        <p>855,00</p>
+                    </div>
+                </fieldset>
             </div>
-            
-            <div class="col-sm-6">
-                <div class="input-group h2">
-				    <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Alunos">
-				    <span class="input-group-btn">
-					    <button class="btn btn-primary" type="submit">
-						    <span class="glyphicon glyphicon-search"></span>
-					    </button>
-				    </span>
-			    </div>			
-		    </div>
-		    
-		    <div class="col-sm-3">
-			    <input class="form-control h2" name="datanasc" id="datanasc" type="date" />
-		    </div>   
-        </div>
+            <div class="row">
+                <fieldset>
+                    <legend>Receber</legend>
+                    <div class="form-group col-md-4">
+                        <label for="txtValor">Valor</label>
+                        <input type="number" id="txtValor" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="txtDataPagamento">Data de Pagamento</label>
+                        <input type="text" id="txtDataPagamento" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="txtNome">Receber Pagamento</label>
+                        <input type="submit" class="btn btn-sucess form-control" value="Receber">
+                    </div>
+                </fieldset>
+            </div>
+        </form>
     </div>
-       
-    <div id="list" class="row">
-	    <div class="table-responsive col-md-12">
-		    <table class="table table-striped" cellspacing="0" cellpadding="0">
-			    <thead>
-				    <tr>
-					    <th>ID</th>
-					    <th>Nome</th>
-					    <th>Email</th>
-					    <th>Celular</th>
-					    <th class="actions">Ações</th>
-				    </tr>
-			    </thead>
-			    <tbody>
-				    <tr>
-					    <td>1001</td>
-					    <td>Gustavo Henrique Martins</td>
-					    <td>gustavo_sh8@hotmail.com</td>
-					    <td>035 9 9964-1994</td>
-					    <td class="actions">
-                            <a class="btn btn-info btn-xs" href="frequencia.html">Frequência</a>
-                        </td>
-				    </tr>
-                    <tr>
-                        <td>1002</td>
-					    <td>Douglas de Cássio Oliveira</td>
-					    <td>douglinhas_uchiha@hotmail.com</td>
-					    <td>035 9 9917-9716</td>
-                        <td class="actions">
-                            <a class="btn btn-info btn-xs" href="frequencia.html">Frequência</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1003</td>
-					    <td>Sânyara Koren de Vilas Boas</td>
-					    <td>sanyara_koren@hotmail.com</td>
-					    <td>035 9 9819-2001</td>
-                        <td class="actions">
-                            <a class="btn btn-info btn-xs" href="frequencia.html">Frequência</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-        
+	
     <div class="modal fade" id="senha-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -124,7 +97,7 @@
                             <input type="password" class="form-control" id="confirmarSenha" required>                          
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary" onclick="validatePassword()">Confirmar</button>
+                            <button type="submit" class="btn btn-primary">Confirmar</button>
 	                        <a href="" class="btn btn-default" data-dismiss="modal">Cancelar</a>
                         </div>
                     </form>
@@ -135,7 +108,6 @@
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/validadePassword.js"></script>
        
 </body>
 </html>

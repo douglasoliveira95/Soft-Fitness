@@ -21,84 +21,94 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="personal-index.html">Soft Fitness</a>
+                <a class="navbar-brand" href="user-index.html">Soft Fitness</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="alunos.html">Alunos</a></li>
-                    <li><a href="recebimento.html">Recebimentos</a></li>
+                    <li><a href="frequencia.html">Frequência</a></li>
+                    <li><a href="pagamentos.html">Pagamentos</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#senha-modal">Alterar Senha</a></li>
                     <li><a href="../index.html">Sair</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-      
+    
     <div class="container-fluid top">
         <div class="row">
-            <div class="col-sm-3">
-                <h1 class="text-left">Alunos</h1>
-            </div>
-            
-            <div class="col-sm-6">
-                <div class="input-group h2">
-				    <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Alunos">
-				    <span class="input-group-btn">
-					    <button class="btn btn-primary" type="submit">
-						    <span class="glyphicon glyphicon-search"></span>
-					    </button>
-				    </span>
-			    </div>			
-		    </div>
-		    
-		    <div class="col-sm-3">
-			    <input class="form-control h2" name="datanasc" id="datanasc" type="date" />
-		    </div>   
+            <div class="col-md-12">
+                <h1 class="text-center">Frequência</h1>
+            </div> 
         </div>
     </div>
-       
+    
     <div id="list" class="row">
 	    <div class="table-responsive col-md-12">
 		    <table class="table table-striped" cellspacing="0" cellpadding="0">
 			    <thead>
 				    <tr>
-					    <th>ID</th>
-					    <th>Nome</th>
-					    <th>Email</th>
-					    <th>Celular</th>
-					    <th class="actions">Ações</th>
+					    <th>Nome do Aluno</th>
+					    <th>Mesês</th>
+					    <th colspan="31">Dias</th>
 				    </tr>
 			    </thead>
 			    <tbody>
 				    <tr>
-					    <td>1001</td>
-					    <td>Gustavo Henrique Martins</td>
-					    <td>gustavo_sh8@hotmail.com</td>
-					    <td>035 9 9964-1994</td>
-					    <td class="actions">
-                            <a class="btn btn-info btn-xs" href="frequencia.html">Frequência</a>
-                        </td>
-				    </tr>
-                    <tr>
-                        <td>1002</td>
-					    <td>Douglas de Cássio Oliveira</td>
-					    <td>douglinhas_uchiha@hotmail.com</td>
-					    <td>035 9 9917-9716</td>
-                        <td class="actions">
-                            <a class="btn btn-info btn-xs" href="frequencia.html">Frequência</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1003</td>
-					    <td>Sânyara Koren de Vilas Boas</td>
-					    <td>sanyara_koren@hotmail.com</td>
-					    <td>035 9 9819-2001</td>
-                        <td class="actions">
-                            <a class="btn btn-info btn-xs" href="frequencia.html">Frequência</a>
-                        </td>
-                    </tr>
+				        <td>Gustavo Henrique Martins</td>
+				        <td><select name="meses" class="form-control"> 
+                            <option value="jan">Janeiro</option> 
+                            <option value="fev">Fevereiro</option> 
+                            <option value="mar">Março</option> 
+                            <option value="abr">Abril</option>
+                            <option value="mai">Maio</option>
+                            <option value="jun">Junho</option>
+                            <option value="jul">Julho</option>
+                            <option value="ago">Agosto</option>
+                            <option value="set">Setembto</option>
+                            <option value="out">Outubro</option>
+                            <option value="nov">Novembro</option>
+                            <option value="dez">Dezembro</option> 
+                            </select></td>
+                        <td><input type="checkbox">1</td>
+                        <td><input type="checkbox">2</td>
+                        <td><input type="checkbox">3</td>
+                        <td><input type="checkbox">4</td>
+                        <td><input type="checkbox">5</td>
+                        <td><input type="checkbox">6</td>
+                        <td><input type="checkbox">7</td>
+                        <td><input type="checkbox">8</td>
+                        <td><input type="checkbox">9</td>
+                        <td><input type="checkbox">10</td>
+                        <td><input type="checkbox">11</td>
+                        <td><input type="checkbox">12</td>
+                        <td><input type="checkbox">13</td>
+                        <td><input type="checkbox">14</td>
+                        <td><input type="checkbox">15</td>
+                        <td><input type="checkbox">16</td>
+                        <td><input type="checkbox">17</td>
+                        <td><input type="checkbox">18</td>
+                        <td><input type="checkbox">19</td>
+                        <td><input type="checkbox">20</td>
+                        <td><input type="checkbox">21</td>
+                        <td><input type="checkbox">22</td>
+                        <td><input type="checkbox">23</td>
+                        <td><input type="checkbox">24</td>
+                        <td><input type="checkbox">25</td>
+                        <td><input type="checkbox">26</td>
+                        <td><input type="checkbox">27</td>
+                        <td><input type="checkbox">28</td>
+                        <td><input type="checkbox">29</td>
+                        <td><input type="checkbox">30</td>
+                        <td><input type="checkbox">31</td>
+				    </tr>   
                 </tbody>
             </table>
+            <div class="row">
+	            <div class="col-md-12">
+                    <button type="submit" class="btn btn-success btn-lg">Salvar</button>
+                    <a href="alunos.html" class="btn btn-default btn-lg">Cancelar</a>
+                </div>
+            </div>
         </div>
     </div>
         

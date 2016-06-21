@@ -16,18 +16,17 @@
                     <li class="login_li"><a href="index.html">Home</a></li>
                     <li class="login_li"><a href="horarios.html">Horários</a></li>
                     <li class="login_li"><a href="servicos.html">Serviços</a></li>
-                    <li class="login_li"><a href="fale-conosco.html">Fale conosco</a></li>
                     <li class="login_li login"><a href="#formLogin">Login</a></li>
                     
                     <div id="formLogin">
                         <label id="lbLogin">Bem Vindo</label>
                         <a href=""><button class="close"> X </button></a>
                         <form method="post">
-                            <input type="text" name="username" placeholder="Usuário">
-                            <input type="password" name="password" placeholder="Senha">
+                            <input type="text" id="username" name="username" placeholder="Usuário">
+                            <input type="password" id="password" name="password" placeholder="Senha">
                             <label><input type="checkbox" name="rememberMe"> Lembrar meus dados</label>
                             <div class="botoes">
-                                <a class="green" href="adm/adm-index.html">Acessar conta</a>
+                                <input type="button" onclick="Login()" class="green" value="Acessar conta">
                             </div>
                         </form>
                     </div>
@@ -68,6 +67,7 @@
         
     </div>
     
-    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
+    
 </body>
 </html>
